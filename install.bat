@@ -1,2 +1,2 @@
 @echo off
-pip3 install pygame pyscreenshot
+pip3 install pyscreenshot
