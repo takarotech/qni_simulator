@@ -7,4 +7,4 @@ if (( EUID == 0 )); then
 fi
 
 #-> Install pyscreenshot package for capturing screen regions
-pip3 install pyscreenshot
+sudo -H pip3 install pyscreenshot
