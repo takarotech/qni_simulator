@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import argparse
 import os.path
 import logging
 import pygame
@@ -70,7 +69,7 @@ class QniSimulator(object):
         self._draw_display()
 
     def draw_screen_surface(self):
-        i = pyscreenshot._grab_simple(False, bbox=self.SCREEN_RECT)
+        i = pyscreenshot.backend_grab(False, self.SCREEN_RECT, False)
         m = pygame.image.frombuffer(i.tobytes(), i.size, 'RGB')
         self.screen_surface.blit(m, (0, 0)) 
         self.draw_surface(self.screen_surface)
